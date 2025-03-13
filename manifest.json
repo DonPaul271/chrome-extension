@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Rating Predictor",
+  "version": "2.0",
+  "permissions": ["activeTab", "scripting"],
+
+  "icons": {
+        "16": "icon16.png",
+        "48": "icon16.png",
+        "128": "icon16.png"
+    },
+  "host_permissions": ["https://codeforces.com/contest/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://codeforces.com/contest/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
